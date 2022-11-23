@@ -1,0 +1,180 @@
+/* RESET ALL */
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* FONTS */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap'); */
+
+/* MAIN */
+
+html, body
+{
+    height: 100%;
+    width: 100%;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body
+{
+    background: radial-gradient(ellipse at top, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.score-header {
+    height: 6rem;
+    width: 20rem;
+    border: solid 3px hsl(217, 16%, 45%);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3%;
+    margin-top: 1.2rem;
+}
+
+.name {
+    height: 100%;
+    margin-left: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name img {
+    height: 3.2rem;
+}
+
+.score-display {
+    background-color: white;
+    border-radius: 4px;
+    height: 100%;
+    width: 5rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    line-height: 0.85;
+}
+
+#score-title {
+    color: hsl(229, 64%, 46%);
+    font-size: 0.7em;
+    letter-spacing: 2px;
+}
+
+#score {
+    color: hsl(229, 25%, 31%);
+    font-size: 2.7em;
+    font-weight: 700;
+}
+
+/* CHOOSE ROCK, PAPER OR SCISSORS */
+.game-container {
+    height: 25rem;
+    width: 22rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./bg-triangle.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 14rem;
+}
+
+.choices1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 1rem;
+}
+
+.choices2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.rond1, .rond2, .rond3 {
+    border-radius: 50%;
+    height: 8rem;
+    width: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.rond1 {
+    background: linear-gradient(to top, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+    box-shadow: inset 0px -6px 1px hsl(230, 89%, 50%);
+}
+
+.rond2 {
+    background: linear-gradient(to top, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+    box-shadow: inset 0px -6px 1px hsl(39, 89%, 37%);
+}
+
+.rond3 {
+    background: linear-gradient(to top, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+    box-shadow: inset 0px -6px 1px hsl(349, 71%, 32%);
+}
+
+#paper, #scissors, #rock {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    text-decoration: none;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: inset 0px 5px 2px rgba(0,0,0,0.2);
+}
+
+.choices1 img, .choices2 img {
+    width: 2.6rem;
+}
+
+/* RULES */
+
+.rules {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+#rules-btn {
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: 7px;
+    border: solid 2px hsl(217, 16%, 50%);
+    background: none;
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+    font-family: 'Barlow Semi Condensed', sans-serif;;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
