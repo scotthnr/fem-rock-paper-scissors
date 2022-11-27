@@ -25,25 +25,25 @@
 
       <div class="score-display">
         <p id="score-title">SCORE</p>
-        <p id="score">12</p>
+        <p id="score">0</p>
       </div>
     </div>
 
     <div class="game-container">
       <div class="choices1">
-        <div class="rond1">
-          <button id="paper" type="button" onclick=""><img src="./icon-paper.svg" /></button>
+        <div id="rond1" class="paper" onclick="pickSign(this.className)">
+          <button id="paper-btn" type="button"><img src="./icon-paper.svg" /></button>
         </div>
 
-        <div class="rond2">
-          <button id="scissors" type="button" onclick=""><img src="./icon-scissors.svg" /></button>
+        <div id="rond2" class="scissors" onclick="pickSign(this.className)">
+          <button id="scissors-btn" type="button"><img src="./icon-scissors.svg" /></button>
         </div>
       </div>
         
 
       <div class="choices2">
-        <div class="rond3">
-          <button id="rock" type="button" onclick=""><img src="./icon-rock.svg" /></button>
+        <div id="rond3" class="rock" onclick="pickSign(this.className)">
+          <button id="rock-btn" type="button"><img src="./icon-rock.svg" /></button>
         </div>
       </div>
     </div>

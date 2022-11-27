@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+    </style> 
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+</head>
+<body>
+    <div class="main">
+        <div class="rules-display" id="hide-rules">
+            <p>RULES</p>
+            <img id="rules-image" src="./image-rules.svg">
+            <button id="close-rules" type="button" onclick="hideRules()"><img src="./icon-close.svg"></button>
+        </div>
+
+        <div class="score-header">
+            <div class="name">
+                <img src="./logo.svg">
+            </div>
+
+            <div class="score-display">
+                <p id="score-title">SCORE</p>
+                <p id="score">0</p>
+            </div>
+        </div>
+
+        <div class="fight-container">
+            <div class="you-picked">
+                <div class="picked-rond">
+
+                </div>
+
+                <p>YOU PICKED</p>
+            </div>
+
+            <div class="house-picked">
+                <div class="picked-rond">
+
+                </div>
+
+                <p>THE HOUSE PICKED</p>
+            </div>
+        </div>
+
+        <div class="result">
+            <p>YOU LOSE</p>
+            <button id="play-again" type="button" onclick="">PLAY AGAIN</button>
+        </div>
+
+        <div class="rules">
+            <button id="rules-btn" type="button" onclick="displayRules()">RULES</button>
+        </div>
+
+    </div>
+
+  <!--
+  Score
+  Rules
+
+  You Picked
+  The House Picked
+
+  You Win
+  You Lose
+
+  Play Again
+  -->
+    <script src="script.js"></script>
+</body>
+</html>
