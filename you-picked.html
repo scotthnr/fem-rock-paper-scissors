@@ -30,26 +30,28 @@
         </div>
 
         <div class="fight-container">
-            <div class="you-picked">
-                <div class="picked-rond">
-
+            <div class="you-picked-container">
+                <div class="picked-rond" id="rond1">
+                    <div id="paper-btn" class="sign-around"><img id="picked-image" src="./icon-paper.svg"/></div>
                 </div>
 
                 <p>YOU PICKED</p>
             </div>
 
-            <div class="house-picked">
-                <div class="picked-rond">
-
+            <div class="house-picked-container">
+                <div class="picked-rond" id="house-picked">
+                    <div id="oponent" class="sign-around"><img id="oponent-image" src=""/></div>
                 </div>
 
                 <p>THE HOUSE PICKED</p>
             </div>
         </div>
 
-        <div class="result">
-            <p>YOU LOSE</p>
-            <button id="play-again" type="button" onclick="">PLAY AGAIN</button>
+        <div class="result-container">
+            <div id="result-display">
+                <p id="result">YOU LOSE</p>
+                <button id="play-again" type="button" onclick="">PLAY AGAIN</button>
+            </div>
         </div>
 
         <div class="rules">
@@ -58,18 +60,7 @@
 
     </div>
 
-  <!--
-  Score
-  Rules
-
-  You Picked
-  The House Picked
-
-  You Win
-  You Lose
-
-  Play Again
-  -->
     <script src="script.js"></script>
+    <script src="second-page.js"></script>
 </body>
 </html>

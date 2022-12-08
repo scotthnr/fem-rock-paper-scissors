@@ -16,7 +16,9 @@ const hideRules = () => {
 /* PICK SIGN (ROCK, PAPER OR SCISSORS) */
 const pickSign = (className) => {
     pickedSign = className;
-    console.log(pickedSign);
-    
-    
+    afterPick();
+}
+
+const afterPick = () => {
+    window.location.href="./you-picked.html?sign=" + pickedSign;
 }
